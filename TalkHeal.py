@@ -45,11 +45,9 @@ if not st.session_state.authenticated:
 # --- TOP RIGHT BUTTONS ---
 if st.session_state.get("authenticated", False):
     col_spacer, col_theme, col_emergency, col_about, col_logout = st.columns([0.7, 0.1, 0.35, 0.2, 0.2])
-<<<<<<< HEAD
-=======
+
     with col_spacer:
         pass
->>>>>>> e2ffa7b335283e39d282d5ae78b43d34fc16fc35
     with col_theme:
         is_dark = st.session_state.get('dark_mode', False)
         if st.button("🌙" if is_dark else "☀️", key="top_theme_toggle", use_container_width=True):
